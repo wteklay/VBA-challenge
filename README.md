@@ -9,18 +9,19 @@ The percentage change from the opening price at the beginning of a given year to
 The total stock volume of the stock. The result should match the following image:
 ```
 ## VBA Code 
-Sub Homework()
 
-Dim Ticker_Label As String
-Dim Percentage_change As Double
-Dim Yearly_Change As Double
-Dim Total_Stock_value As Double
-Dim ws As Worksheet
-Dim i As Integer
-Dim OpenNum As Double
-Dim CloseNum As Double
-Dim Counter As Integer
-Dim lastrow As Double
+    Sub Homework()
+
+    Dim Ticker_Label As String
+    Dim Percentage_change As Double
+    Dim Yearly_Change As Double
+    Dim Total_Stock_value As Double
+    Dim ws As Worksheet
+    Dim i As Integer
+    Dim OpenNum As Double
+    Dim CloseNum As Double
+    Dim Counter As Integer
+    Dim lastrow As Double
 
     For Each ws In Worksheets
         ws.Activate
@@ -79,5 +80,5 @@ Dim lastrow As Double
 
 ## Results 
 ![Formatted Cells](https://github.com/wteklay/VBA-challenge/blob/d48a35757676204c0449e340ae052d11f8c1cfc7/Screenshot%202023-03-06%20165014.png)
-# Disclaimer 
-The Excel file size was too large to upload. Please use the code above. 
+### Disclaimer 
+*The Excel file size was too large to upload. Please use the code above.* 
