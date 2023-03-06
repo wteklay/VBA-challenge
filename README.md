@@ -8,8 +8,7 @@ Yearly change from the opening price at the beginning of a given year to the clo
 The percentage change from the opening price at the beginning of a given year to the closing price at the end of that year.
 The total stock volume of the stock. The result should match the following image:
 ```
-##VBA Code 
-
+## VBA Code 
 Sub Homework()
 
 Dim Ticker_Label As String
@@ -24,7 +23,7 @@ Dim Counter As Integer
 Dim lastrow As Double
 
     For Each ws In Worksheets
-        'ws.Activate
+        ws.Activate
         lastrow = ws.Cells(Rows.Count, 1).End(xlUp).Row
         ws.Range("I1").EntireColumn.Insert
         ws.Cells(1, 9) = "Ticker"
@@ -49,10 +48,13 @@ Dim lastrow As Double
                 CloseNum = Cells(i, 6)
                 Yearly_Change = CloseNum - OpenNum
                 Cells(Counter + 1, 10).Value = Yearly_Change
+                
                 Total_Stock_value = Total_Stock_value
                 Cells(Counter + 1, 12).Value = Total_Stock_value
+                
                 Percentage = (Yearly_Change / OpenNum)
                 Cells(Counter + 1, 11).Value = Format(Percentage, "Percent")
+                
                 Total_Stock_value = 0
                 OpenNum = 0
                 
@@ -73,6 +75,9 @@ Dim lastrow As Double
                 End If
             Next i
     Next ws
-End Sub
+    End Sub
 
 ## Results 
+![Formatted Cells](https://github.com/wteklay/VBA-challenge/blob/d48a35757676204c0449e340ae052d11f8c1cfc7/Screenshot%202023-03-06%20165014.png)
+# Disclaimer 
+The Excel file size was too large to upload. Please use the code above. 
