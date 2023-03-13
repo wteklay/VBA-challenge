@@ -120,3 +120,4 @@ End Sub
 ![Formatted Cells](https://github.com/wteklay/VBA-challenge/blob/d48a35757676204c0449e340ae052d11f8c1cfc7/Screenshot%202023-03-06%20165014.png)
 ### Disclaimer 
 *The Excel file size was too large to upload. Please use the code above.* 
+*I have attached a .bas file containing the code and a .cls file I used to import the code directly into my repo.* 
